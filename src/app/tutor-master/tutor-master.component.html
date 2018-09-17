@@ -1,18 +1,9 @@
 <div class="container">
   <h1>Tutors</h1>
 
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Username</th>
-      <th>Status</th>
-    </tr>
-    <tr *ngFor="let tutor of tutors" routerLink="/tutors/{{tutor.id}}">
-      <td>{{tutor.id}}</td>
-      <td>{{tutor.name}}</td>
-      <td>{{tutor.username}}</td>
-      <td>{{tutor.status ? 'Active' : 'Inactive'}}</td>
-    </tr>
-  </table>
+
+  <ag-grid-angular class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+
+  </ag-grid-angular>
+
 </div>

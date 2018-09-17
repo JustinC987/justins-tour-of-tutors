@@ -1,4 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import './src/app/app.variables.scss';
+
+$ag-icons-path: '~ag-grid-community/src/styles/icons/';
+
+@import '~ag-grid-community/src/styles/ag-grid.scss';
+@import '~ag-grid-community/src/styles/ag-theme-balham.scss';
+
 body {
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }

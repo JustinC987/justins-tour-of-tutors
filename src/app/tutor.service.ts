@@ -10,22 +10,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class TutorService {
 	tutors: Tutor[];
 
-	constructor(private http: HttpClient) {
-		this.tutors = [
-			{
-				id: 1,
-				name: 'Tom Tester',
-				username: 'tomtest',
-				status: true
-			},
-			{
-				id: 2,
-				name: 'Bill Wester',
-				username: 'billwest',
-				status: false
-			}
-		];
-	}
+	constructor(private http: HttpClient) {}
 
 	public getAll(): Observable<Tutor[]> {
 		return this.http

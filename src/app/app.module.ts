@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRouterModule } from './app-router/app-router.module';
 import { TutorMasterComponent } from './tutor-master/tutor-master.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
 	declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
 	imports: [
 		BrowserModule.withServerTransition({ appId: 'justins-tour-of-tutors' }),
 		AppRouterModule,
-		HttpClientModule
+		HttpClientModule,
+		AgGridModule.withComponents([])
 	],
 	providers: [],
 	bootstrap: [AppComponent]

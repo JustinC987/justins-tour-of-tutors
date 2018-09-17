@@ -9,6 +9,7 @@ import { TutorDeleteComponent } from './tutor-delete/tutor-delete.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRouterModule } from './app-router/app-router.module';
+import { TutorMasterComponent } from './tutor-master/tutor-master.component';
 
 @NgModule({
 	declarations: [
@@ -18,7 +19,8 @@ import { AppRouterModule } from './app-router/app-router.module';
 		TutorDetailComponent,
 		TutorDeleteComponent,
 		HeaderComponent,
-		FooterComponent
+		FooterComponent,
+		TutorMasterComponent
 	],
 	imports: [
 		 BrowserModule.withServerTransition({ appId: 'justins-tour-of-tutors' }),

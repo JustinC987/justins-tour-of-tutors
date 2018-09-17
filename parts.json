@@ -3,6 +3,7 @@
 	"component": [
 		"home",
 		"about",
+		"tutor-master",
 		"tutor-detail",
 		"tutor-delete",
 		"header",

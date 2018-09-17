@@ -1,0 +1,37 @@
+@import '../app.variables.scss';
+
+header {
+	background: $primary;
+	color: $white;
+	height: 80px;
+}
+
+header {
+	background: $primary;
+	height: 80px;
+}
+
+a {
+	color: $white;
+	text-decoration: none;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	margin: auto;
+}
+
+.header-inner {
+	flex: 1 1 auto;
+}
+
+nav {
+	text-align: right;
+}
+
+nav a {
+	margin-left: 10px;
+}

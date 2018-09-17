@@ -1,13 +1,20 @@
 {
-	"class": [],
-	"component": [],
+	"class": ["tutor"],
+	"component": [
+		"home",
+		"about",
+		"tutor-detail",
+		"tutor-delete",
+		"header",
+		"footer"
+	],
 	"directive": [],
 	"enum": [],
 	"guard": [],
 	"interface": [],
-	"module": [],
+	"module": ["app-router"],
 	"pipe": [],
-	"service": [],
+	"service": ["tutor"],
 	"application": [],
 	"library": [],
 	"universal": []

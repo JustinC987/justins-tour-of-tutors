@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TutorService } from '../tutor.service';
+import { Tutor } from '../tutor';
 
 @Component({
 	selector: 'app-tutor-master',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./tutor-master.component.scss']
 })
 export class TutorMasterComponent implements OnInit {
+	tutors: Tutor[];
 
-	constructor() { }
+	constructor(private tutorService: TutorService) {}
 
 	ngOnInit() {
+		this.getAll();
 	}
 
+	getAll(): void {
+		this.tutors = this.tutorService.getAll();
+	}
 }

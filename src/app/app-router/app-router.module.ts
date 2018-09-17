@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 import { AboutComponent } from '../about/about.component';
 import { TutorMasterComponent } from '../tutor-master/tutor-master.component';
+import { TutorDetailComponent } from '../tutor-detail/tutor-detail.component';
 
 const routes: Routes = [
 	{
@@ -18,6 +19,10 @@ const routes: Routes = [
 	{
 		path: 'tutors',
 		component: TutorMasterComponent
+	},
+	{
+		path: 'tutors/:id',
+		component: TutorDetailComponent
 	}
 ];
 

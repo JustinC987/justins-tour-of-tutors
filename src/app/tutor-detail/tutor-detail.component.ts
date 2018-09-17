@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Tutor } from '../tutor';
+import { TutorService } from '../tutor.service';
 
 @Component({
 	selector: 'app-tutor-detail',
@@ -6,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./tutor-detail.component.scss']
 })
 export class TutorDetailComponent implements OnInit {
+	tutor: Tutor;
 
-	constructor() { }
+	constructor(
+		private route: ActivatedRoute,
+		private tutorService: TutorService
+	) {}
 
-	ngOnInit() {
+	get(): void {
+		const id = +this.route.snapshot.paramMap.get('id');
+		this.tutor = this.tutorService.get(id);
 	}
 
+	ngOnInit() {
+		this.get();
+	}
 }

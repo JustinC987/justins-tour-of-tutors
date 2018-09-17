@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRouterModule } from './app-router/app-router.module';
 import { TutorMasterComponent } from './tutor-master/tutor-master.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
@@ -23,10 +24,11 @@ import { TutorMasterComponent } from './tutor-master/tutor-master.component';
 		TutorMasterComponent
 	],
 	imports: [
-		 BrowserModule.withServerTransition({ appId: 'justins-tour-of-tutors' }),
-		 AppRouterModule
+		BrowserModule.withServerTransition({ appId: 'justins-tour-of-tutors' }),
+		AppRouterModule,
+		HttpClientModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

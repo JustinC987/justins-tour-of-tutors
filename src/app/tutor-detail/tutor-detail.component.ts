@@ -18,7 +18,7 @@ export class TutorDetailComponent implements OnInit {
 
 	get(): void {
 		const id = +this.route.snapshot.paramMap.get('id');
-		this.tutor = this.tutorService.get(id);
+		this.tutorService.get(id).subscribe(tutor => (this.tutor = tutor));
 	}
 
 	ngOnInit() {

@@ -17,6 +17,6 @@ export class TutorMasterComponent implements OnInit {
 	}
 
 	getAll(): void {
-		this.tutors = this.tutorService.getAll();
+		this.tutorService.getAll().subscribe(tutors => (this.tutors = tutors));
 	}
 }
